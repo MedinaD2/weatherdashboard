@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./cs/style.css">
+</head>
+<body>
+   <header class="text-center navbar-light bg-dark">
+<nav class="navbar-dark bg-dark">
+<div class="container-fluid">
+<span class="navbar-brand mb-0 h1">Weather Dashboard!</span>
+</div>
+</nav>
+</header>
+<main>
+<p id="day1high"></p> 
+ <div class="container">
+ <div class="row">
+ <div class="col-4">
+
+<!-- SEARCH CITY -->
+  <h3 class="text-start" id="searchTerm">Search City:</h3>
+
+<!-- SEARCH BOX -->
+ <form class="d-flex">
+ <input id="searchTermInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+<button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
+</form>
+
+
+<!-- WEATHER DISPLAY  -->
+ <div class="col-8">
+  <div class="card mt-3">
+  <div class="card-body">
+  <div id="line1">
+<h3 id="cityName"></h3>
+<img id="icon" src=""></img>
+</div>
+ <h4 id="temperature"></h4>
+ <h4 id="humidity"></h4>
+ <h4 id=windspeed></h4>
+<h4 id=uvIndex></h4>
+</div>
+
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
